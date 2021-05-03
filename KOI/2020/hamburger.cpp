@@ -2,7 +2,10 @@
 using namespace std;
 int main()
 {
-    /* 문제: https://koi.or.kr/assets/koi/2020/1/problems/m1-problems.pdf */
+    /* 
+     문제이름: 햄버거 분배
+     문제: https://koi.or.kr/assets/koi/2020/1/problems/m1-problems.pdf 
+    */
 
     int n,k; // n=식탁의 길이 k=햄버거를 선택가능한 거리
     cin>>n>>k;
