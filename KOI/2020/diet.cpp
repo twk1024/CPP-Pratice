@@ -2,6 +2,12 @@
 using namespace std;
 int main()
 {
+    
+    /* 
+      문제이름: 다이어트
+      문제: https://koi.or.kr/assets/koi/2020/1/problems/m1-problems.pdf 
+    */
+    
     int n; // 식재료의 개수
     cin>>n;
 
@@ -16,7 +22,7 @@ int main()
     }
 
 
-    int leastcost=0, cost=0, result[50]={0};
+    int leastcost=1000, cost=0, result[50]={0};
     for(int i=0;i<n;i++)
     {
         for(int j=0;j<n;j++)
@@ -75,7 +81,6 @@ int main()
                                     }
                                 }
 
-
                             }
                         }
                     }
@@ -86,15 +91,13 @@ int main()
         cost=0;
     }
 
-    cout<<leastcost;
+    cout<<leastcost<<endl;
 
     for(int i=0;i<50;i++)
     {
         if(result[i]==0)
         {
-            printf("Oops");
             break;
-
         }
 
         cout<<result[i]<<' ';
