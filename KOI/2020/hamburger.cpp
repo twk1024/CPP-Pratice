@@ -15,6 +15,14 @@ int main()
     for(int i=0;i<n;i++)
     {
         cin>>a[i]; // H(amburger) or P(eople)
+        
+        if(a[i]=='H')
+        {
+            b[i]=1;
+        }else if(a[i]=='P')
+        {
+            b[i]=0;
+        }
     }
 
     int cnt=0;
